@@ -1,0 +1,245 @@
+
+.bungkus{
+    height: 1450px;
+}
+
+.row1 .col:nth-child(1) {
+    background-color: white;
+    height: 150px;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    animation: animasiRow1Left 0.5s  linear forwards;
+    animation-delay: 1s;
+ 
+}
+.row1 .col:nth-child(2) {
+    background-color: white;
+    height: 150px;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+}
+
+.row1 .col:nth-child(3) {
+    background-color: white;
+    height: 150px;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    animation: animasiRow1Right 0.5s  linear forwards;
+    animation-delay: 1s;
+}
+
+
+
+
+.row3 .col:nth-child(1) {
+    background-color: white;
+    height: 150px;
+    position: relative;
+    bottom: 50px;
+    z-index: 1;
+    animation: animasiRow3Left 0.5s  linear forwards;
+    animation-delay: 1s;
+}
+.row3 .col:nth-child(2) {
+    background-color: white;
+    height: 150px;
+    position: relative;
+    bottom: 50px;
+    z-index: 1;
+}
+.row3 .col:nth-child(3) {
+    background-color: white;
+    height: 200px;
+    position: relative;
+    bottom: 50px;
+    z-index: 1;
+    animation: animasiRow3Right 0.5s  linear forwards;
+    animation-delay: 1s;
+}
+
+
+.row2 .col img{
+    filter: grayscale(100%);
+    animation: grayscale 0.5s  linear forwards;
+  animation-delay: 1s;
+}
+
+
+
+.row2 .col h1{
+       opacity: 0.0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 90px;
+    font-weight: 200;
+    color: black;
+    position: absolute;
+    bottom: 100px;
+    right:0;
+    left:900px;
+z-index: 2;
+-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  animation: opacity 0.5s  linear forwards;
+  animation-delay: 1s;
+}
+
+
+.row2 .col .back{
+
+    background-color: #942f67;
+    width: 0px;
+    height: 100px;
+    position: absolute;
+    bottom: 110px;
+    right:0;
+    left:895px;
+    z-index: 1;
+    animation: animasiKotakGates 0.5s  linear forwards;
+  animation-delay: 1s;
+
+}
+
+h1::after {
+    content: '';
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+    
+    
+}
+
+@keyframes animasiKotakGates {
+
+    0% {
+       
+        width:0px;
+    }
+    
+    50% {
+      
+        width:100px;
+    }
+    
+    100%{
+    
+        width:250px;
+    }
+    
+    }
+@keyframes opacity {
+
+    0% {
+       
+        opacity: 0.0;
+    }
+    
+    50% {
+      
+        opacity: 0.5;
+    }
+    
+    100%{
+    
+        opacity: 1;
+    }
+    
+    }
+
+
+
+@keyframes grayscale {
+
+0% {
+   
+    filter: grayscale(100%);
+}
+
+50% {
+    filter: grayscale(50%);
+}
+
+100%{
+
+    filter: grayscale(0%);
+}
+
+}
+@keyframes animasiRow1Left {
+
+0% {
+   
+    top:100px;
+}
+
+50% {
+  
+    top:75px;
+}
+
+100%{
+
+    top:50px;
+}
+
+}
+
+@keyframes animasiRow1Right {
+
+0% {
+    top: 100px;
+}
+
+50% {
+    top: 125px;
+}
+
+100%{
+    top: 150px;
+}
+
+}
+
+
+@keyframes animasiRow3Left {
+
+    0% {
+      
+        bottom: 50px;
+    }
+    
+    50% {
+   
+        bottom: 75px;
+    }
+    
+    100%{
+        
+        bottom: 100px;
+    }
+    
+    }
+@keyframes animasiRow3Right {
+
+    0% {
+      
+        bottom: 50px;
+    }
+    
+    50% {
+       
+        bottom: 25px;
+    }
+    
+    100%{
+     
+        bottom: 0px;
+    }
+    
+    }
